@@ -103,7 +103,18 @@
 
         <!-- Builtin injector for injecting runner path -->
         
-
+        <script>
+            window.addEventListener("orientationchange", function() {
+                // Adjust game layout or restart game functions if necessary
+                if (window.orientation === 90 || window.orientation === -90) {
+                // Landscape
+                console.log("Landscape mode");
+                } else {
+                // Portrait
+                console.log("Portrait mode");
+                }
+            });
+        </script>
         <script>window.onload = GameMaker_Init;</script>
 
         <!-- Builtin injector for injecting google analytics code -->
