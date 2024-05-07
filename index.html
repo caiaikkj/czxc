@@ -114,6 +114,11 @@
                 console.log("Portrait mode");
                 }
             });
+            document.getElementById('canvas').addEventListener('touchstart', function(event) {
+            console.log('Canvas touched', event);
+            // Add your handling logic here
+            }, { passive: false });
+
         </script>
         <script>window.onload = GameMaker_Init;</script>
 
